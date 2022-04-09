@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/contacts
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+app:
+  messages:
+     contactSaveSucc: Contact Saved Succesfully
+     contactsaveFail: Failed to save 
+     contactDelSucc: Contact Deleted
+     contactDelFail: Failed to delete contact   
